@@ -1,0 +1,27 @@
+$card-width: 2fr;
+$card-height: 2fr;
+
+.wrapper {
+  height: 600px;
+  width: 600px;
+  display: grid;
+  position: relative;
+  align-content: center; /* Középre igazítás vízszintesen */
+  justify-content: center; /* Középre igazítás függőlegesen */
+  border: 1px dotted black;
+  margin: auto;
+  grid-template-columns: repeat(4, $card-width);
+  grid-template-rows: repeat(4, $card-height);
+  gap: 1em;
+  padding: 20px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: $card-width;
+  height: $card-height;
+  background-color: yellow;
+}
